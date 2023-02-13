@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
   Rigidbody2D rb;
+  
   private int movementH , movementV;
   private int speed;
   private bool isRight = true;
@@ -47,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
             horizontal = true;
         }
     }
+
+    
 
     
     
