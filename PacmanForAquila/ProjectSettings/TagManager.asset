@@ -8,6 +8,8 @@ TagManager:
   - pellet
   - Walls
   - Enemy
+  - PowerPellet
+  - EatableEnemy
   layers:
   - Default
   - TransparentFX

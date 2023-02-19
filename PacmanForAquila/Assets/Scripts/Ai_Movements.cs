@@ -11,10 +11,12 @@ public class Ai_Movements : MonoBehaviour
     [SerializeField] Vector2 _currentDirection;
     [SerializeField] float _rayDistance;
     [SerializeField] LayerMask _rayLayer;
+    public static Animator _anim;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
     }
     private void Start()
     {
@@ -38,6 +40,7 @@ public class Ai_Movements : MonoBehaviour
                 print("hit pacman");
             }
         }
+        Tag();
     }
     private void ChangeDirection()
     {
@@ -56,5 +59,11 @@ public class Ai_Movements : MonoBehaviour
     {
         _rb.AddForce(_currentDirection * _mvoementSpeed);
     }
-    
+    private void Tag()
+    {
+        if (PowerPellets.isAnim == true)
+        {
+            gameObject.tag = "EatableEnemy";
+        }
+    }
 }
