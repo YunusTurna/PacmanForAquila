@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2399806158807688889}
   - component: {fileID: 7576954434500731321}
   m_Layer: 0
-  m_Name: powerPellet
-  m_TagString: Untagged
+  m_Name: pellet
+  m_TagString: pellet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4095829170568277430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.574046, y: 1.228837, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa04704571e15a34c88973f5e23fae1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 117c63f9dd01bf9458b371d086df672e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,16 +111,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0004464984, y: 0.0008250475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.27, y: 0.28}
+    oldSize: {x: 0.05, y: 0.05}
     newSize: {x: 0.27, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27, y: 0.28}
+  m_Size: {x: 0.052030206, y: 0.048028708}
   m_EdgeRadius: 0
