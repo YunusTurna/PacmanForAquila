@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 240901610}
   - component: {fileID: 240901609}
   - component: {fileID: 240901608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.008087635, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.98382473, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &240901609
 SpriteRenderer:
@@ -227,8 +227,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240901607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.23, y: -0.0167, z: 0}
-  m_LocalScale: {x: 1, y: 10.054905, z: 1}
+  m_LocalPosition: {x: 11.23, y: -0.0552, z: 0}
+  m_LocalScale: {x: 0.999992, y: 9.977482, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -335,11 +335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2095547019342550296, guid: ffbc6614133fa8247bf947c6927bf030, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.02
+      value: 5.27
       objectReference: {fileID: 0}
     - target: {fileID: 2095547019342550296, guid: ffbc6614133fa8247bf947c6927bf030, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.54
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 2095547019342550296, guid: ffbc6614133fa8247bf947c6927bf030, type: 3}
       propertyPath: m_LocalPosition.z
@@ -386,9 +386,9 @@ GameObject:
   - component: {fileID: 877958450}
   - component: {fileID: 877958449}
   - component: {fileID: 877958448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -493,9 +493,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6167599585132859248, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6167599585132859249, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
       propertyPath: m_Name
       value: Blinking
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167599585132859249, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6167599585132859252, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
       propertyPath: m_RootOrder
@@ -541,6 +549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6167599585132859254, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
+      propertyPath: _rayDistance
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59ce2a9e7f9952b4b9a8fbcc7927dd2c, type: 3}
 --- !u!1 &1452244375
@@ -554,9 +566,9 @@ GameObject:
   - component: {fileID: 1452244378}
   - component: {fileID: 1452244377}
   - component: {fileID: 1452244376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,9 +677,9 @@ GameObject:
   - component: {fileID: 1582364593}
   - component: {fileID: 1582364592}
   - component: {fileID: 1582364591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,9 +788,9 @@ GameObject:
   - component: {fileID: 1790417868}
   - component: {fileID: 1790417867}
   - component: {fileID: 1790417866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,9 +899,9 @@ GameObject:
   - component: {fileID: 2089318631}
   - component: {fileID: 2089318630}
   - component: {fileID: 2089318629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

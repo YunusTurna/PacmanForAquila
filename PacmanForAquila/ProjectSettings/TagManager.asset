@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pacman
+  - pellet
+  - Walls
+  - Enemy
   layers:
   - Default
   - TransparentFX

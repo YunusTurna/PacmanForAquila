@@ -106,8 +106,19 @@ public class PlayerMovement : MonoBehaviour
             isUp = true;
             movementV = 1;
         }
-      } 
+      }
+
+      
+      }
 
 
-  }
+  
+  
+  private void OnCollisionEnter2D(Collision2D other)
+   {
+        if(other.gameObject.tag == "Enemy")
+        {
+          Destroy(gameObject);
+        }
+   }
 }
