@@ -5,6 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
   Rigidbody2D rb;
+
+  [SerializeField] GameObject pacman;
+  [SerializeField] GameObject spawnPoint;
+
+  Vector3 spawnPointLocation;
   
   private int movementH , movementV;
   private int speed;
@@ -12,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
   private bool isUp = true;
 
   private bool horizontal = true;
+  public static int health = 3;
   
 
 
@@ -26,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     movementH = 1;
     movementV = 1;
     speed = 5;
+    spawnPointLocation= spawnPoint.transform.position;
   }
   
   
@@ -119,6 +126,15 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
           Destroy(gameObject);
+          health = health - 1;
+          
+          Instantiate(pacman , spawnPointLocation , Quaternion.identity);
+          
         }
+   }
+
+   IEnumerator Wait()
+   {
+    yield return new WaitForSeconds(3);
    }
 }
