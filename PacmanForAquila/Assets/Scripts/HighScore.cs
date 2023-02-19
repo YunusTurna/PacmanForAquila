@@ -20,7 +20,7 @@ public class HighScore : MonoBehaviour
         
         if(Pellets.sayac > PlayerPrefs.GetInt("HighScore" , Pellets.highScore))
         {
-            PlayerPrefs.SetInt("HighScore" , Pellets.highScore);
+            PlayerPrefs.SetInt("HighScore" , Pellets.highScore +1);
             
         }
 }
