@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pacman: {fileID: 2095547019342550295}
-  spawnPoint: {fileID: 7687157932129579651, guid: 0524a2c7c5e69594a81454d98db95191, type: 3}
+  spawnPoint: {fileID: 6299624924250712808, guid: 0524a2c7c5e69594a81454d98db95191, type: 3}
 --- !u!114 &2095547019342550297
 MonoBehaviour:
   m_ObjectHideFlags: 0

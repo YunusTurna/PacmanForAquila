@@ -125,10 +125,10 @@ public class PlayerMovement : MonoBehaviour
    {
         if(other.gameObject.tag == "Enemy")
         {
-          Destroy(gameObject);
+          
           health = health - 1;
           
-          Instantiate(pacman , spawnPointLocation , Quaternion.identity);
+          gameObject.transform.position = spawnPointLocation;
           
         }
    }
