@@ -31,7 +31,7 @@ public class Ai_Movements : MonoBehaviour
 
         if (hit2D.collider != null)
         {
-            if (hit2D.collider.gameObject.CompareTag("Walls"))
+            if (hit2D.collider.gameObject.CompareTag("Walls") || hit2D.collider.gameObject.CompareTag("Enemy"))
             {
                ChangeDirection();
             }
